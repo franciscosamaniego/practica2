@@ -8,11 +8,13 @@ int main(int argc, char *argv[]) {
   int cont = 1;
   while(i >= 0){
   cont = pow(2,i);
-    if(n - cont >= 0) {
+    if((n - cont) >= 0) {
       printf("1 ");
     } else      printf("0 ");
-    n = n - cont;
     i--;
+    if(n - cont >= 0) {
+      n = n - cont;
+    }
   }
   printf("\n");
   return 0;
