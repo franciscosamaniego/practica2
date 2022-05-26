@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
   for (cont = 1; cont <= n; cont++)
    {
        z=x+y;
-       printf("%d\n",z);
+       printf("%d ",z);
        x=y;
        y=z;
   }
